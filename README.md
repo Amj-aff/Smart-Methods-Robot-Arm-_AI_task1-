@@ -44,5 +44,5 @@ To test the Ros, try to run the command ``roscore``; this will create a master n
 
 
 
-![image](https://user-images.githubusercontent.com/86131920/122995479-5514d480-d3b2-11eb-9486-27d986ed3200.png=250x250)
+![image](https://user-images.githubusercontent.com/86131920/122995479-5514d480-d3b2-11eb-9486-27d986ed3200.png)
 
