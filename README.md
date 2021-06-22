@@ -42,7 +42,7 @@ Note: you may need to install curl tool using this command: ``sudo apt install c
 To test the Ros, try to run the command ``roscore``; this will create a master node, the master node will make later communication with other nodes.
 
 
+<img src="https://user-images.githubusercontent.com/86131920/122995479-5514d480-d3b2-11eb-9486-27d986ed3200.png" width=50% height=50%>
 
 
-![image](https://user-images.githubusercontent.com/86131920/122995479-5514d480-d3b2-11eb-9486-27d986ed3200.png)
 
