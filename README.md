@@ -45,4 +45,27 @@ To test the Ros, try to run the command ``roscore``; this will create a master n
 <img src="https://user-images.githubusercontent.com/86131920/122996010-03b91500-d3b3-11eb-96db-bb730bc9f5db.png" width=70% height=70%>
 
 
+## Create Work Space
+
+A catkin workspace is a directory (folder) in which you can create or modify existing catkin packages. The catkin structure simplifies the build and installation process for your ROS packages.
+
+1- Before create and build a catkin workspace, you should source your environment by applying the command.
+
+``$ source /opt/ros/noetic/setup.bash.``
+
+2- Create a catkin workspace.
+
+The next command creates a directory for your workspace and the catkin_make command is a convenience tool for working with catkin workspaces. Running it the first time in your workspace, it will create a CMakeLists.txt link in your 'src' folder.
+
+``$ mkdir -p ~/catkin_ws/src``
+
+``$ cd ~/catkin_ws/``
+
+``$ catkin_make``
+
+Your catkin workspace will look like this :
+
+<img src="https://user-images.githubusercontent.com/86131920/122997623-df5e3800-d3b4-11eb-82c6-a4d913da64e3.png" width=90% height=90%>
+
+
 
