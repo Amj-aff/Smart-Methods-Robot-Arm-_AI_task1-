@@ -29,9 +29,6 @@ Note: you may need to install curl tool using this command: ``sudo apt install c
 
 4- Make sure the Advance Package Tools is up to date use the command ``sudo apt update``.
 
-![image](https://user-images.githubusercontent.com/86131920/122995479-5514d480-d3b2-11eb-9486-27d986ed3200.png)
-
-
 5-Install Ros.
 
 ``sudo apt install ros-noetic-desktop-full``
@@ -39,6 +36,7 @@ Note: you may need to install curl tool using this command: ``sudo apt install c
 6- Setup the environment by using the source command with the script /opt/ros/noetic/setup.bash, It can be convenient to automatically source this script every time a new shell is launched. These commands will do that for you.
 
 ``echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc``
+
 ``source ~/.bashrc``
 
 To test the Ros, try to run the command ``roscore``; this will create a master node, the master node will make later communication with other nodes.
@@ -46,5 +44,5 @@ To test the Ros, try to run the command ``roscore``; this will create a master n
 
 
 
-
+![image](https://user-images.githubusercontent.com/86131920/122995479-5514d480-d3b2-11eb-9486-27d986ed3200.png=250x250)
 
