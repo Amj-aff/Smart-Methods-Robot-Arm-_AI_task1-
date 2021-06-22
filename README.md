@@ -29,6 +29,9 @@ Note: you may need to install curl tool using this command: ``sudo apt install c
 
 4- Make sure the Advance Package Tools is up to date use the command ``sudo apt update``.
 
+![image](https://user-images.githubusercontent.com/86131920/122995479-5514d480-d3b2-11eb-9486-27d986ed3200.png)
+
+
 5-Install Ros.
 
 ``sudo apt install ros-noetic-desktop-full``
