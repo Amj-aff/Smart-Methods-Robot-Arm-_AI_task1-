@@ -1,6 +1,6 @@
 # Ros & Robot Arm Package Installation and Configuration
 ## Table of contents
-* [Task info](# Task_Info)
+* [Task info](#task-info)
 * [Ros Installation](# Ros Installation)
 * [Create Work Space ](# Create Work Space )
 * [Robot Arm Package Installation ](# Robot Arm Package Installation )
