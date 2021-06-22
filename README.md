@@ -12,6 +12,7 @@ This documentation shows the steps of [Ros Noetic](http://wiki.ros.org/noetic/In
 
 ## Ros Installation
 To install Ros, you should have [Ubuntu](http://wiki.ros.org/noetic/Installation/Ubuntu) or [Debian](http://wiki.ros.org/noetic/Installation/Debian) on your machine. Then, you can open the [Ros Noetic installation wiki](http://wiki.ros.org/noetic/Installation/Ubuntu) and follow the command steps.
+
 I will simplify the process with as few steps as possible.
 
 1- Open the Terminal and write the next commands sequentially.
