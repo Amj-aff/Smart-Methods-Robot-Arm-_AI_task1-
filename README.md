@@ -90,10 +90,16 @@ git clone https://github.com/smart-methods/arduino_robot_arm_gripper
 That's command run the arm_pkg check_motors.launch, which opens the Rviz simulator and joint_state_publisher interface.
 
 
+
+
 <img src="https://user-images.githubusercontent.com/86131920/123090747-2d188600-d431-11eb-8f89-71dbba4c3fc3.png" width=90% height=90%>
 
 
+
+
 You can use  joint_state_publisher_gui to relocate and rotate the joints, each slider control with a different joint.
+
+
 
 
 
@@ -106,4 +112,56 @@ You can use  joint_state_publisher_gui to relocate and rotate the joints, each s
 
 <img src="https://user-images.githubusercontent.com/86131920/123091490-132b7300-d432-11eb-9552-ac654c26af88.png" width=90% height=90%>
 
+
+
+
+
+
+
+## Publisher Error Handling
+
+If you are working on the Ros Neotic version, you may get a publisher error message while you are running the command ``$ roslaunch arm_pkg check_motors.launch ``.
+
+
+
+
+
+
+<img src="https://user-images.githubusercontent.com/86131920/123092208-e9bf1700-d432-11eb-8a48-70e6fa33ecde.png" width=90% height=90%>
+
+
+
+If you got this error, that's mean the publisher node name is different from type. To solve this problem, follow the next steps:
+
+1- Open the file check_motors.launch from the directory ``catkin_ws/src/arduino_robot_arm_gripper/arm_pkg/launch/check_motors.launch``.
+Notice the type of the node is "state_publisher " while the node name and package name is  "robot_state_publisher."
+
+
+
+
+
+<img src="https://user-images.githubusercontent.com/86131920/123096214-8683b380-d437-11eb-81ed-de114e0b6d5f.png" width=90% height=90%>
+
+
+2- All you need to do is change the type to the same node name, "robot_state_publisher."
+
+
+
+<img src="https://user-images.githubusercontent.com/86131920/123096550-e2e6d300-d437-11eb-8df9-aef0c5a5b293.png" width=90% height=90%>
+
+
+
+3- Save the file, then run the command.
+
+``$ roslaunch arm_pkg check_motors.launch ``
+
+
+
+
+<img src="https://user-images.githubusercontent.com/86131920/123097099-73251800-d438-11eb-80ee-9663e818c0ae.png" width=90% height=90%>
+
+
+
+
+You handled the error message, and the publisher is working well ! 
 
