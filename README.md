@@ -68,4 +68,42 @@ Your catkin workspace will look like this :
 <img src="https://user-images.githubusercontent.com/86131920/122997623-df5e3800-d3b4-11eb-82c6-a4d913da64e3.png" width=90% height=90%>
 
 
+## Robot Arm Package Installation
+
+First, you need to install dependencies into your workspace, so make sure to change the directory to catkin-ws.
+Then follow the next steps for downloading and setup the robot arm packages.
+
+1- Install packages from [smart-methods/arduino_robot_arm_gripper](https://github.com/smart-methods/arduino_robot_arm_gripper)  inside the src file in your workspace.
+git clone https://github.com/smart-methods/arduino_robot_arm_gripper
+
+2- Make sure you installed all these packages depending on your Ros version. These commands install the simulation and control packages that are needed to run the robot arm on Gazebo or Rivs and control with joints. Joint state publisher is one of the ROS packages that is commonly used to interact with each joint of the robot.
+
+``$ sudo apt-get install ros-melodic-moveit``
+``$ sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui``
+``$ sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher``
+``$ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control``
+
+3- To run the robot arm package on the simulator and control with joints, use the next command.
+
+ ``roslaunch arm_pkg check_motors.launch``
+
+That's command run the arm_pkg check_motors.launch, which opens the Rviz simulator and joint_state_publisher interface.
+
+
+<img src="https://user-images.githubusercontent.com/86131920/123090747-2d188600-d431-11eb-8f89-71dbba4c3fc3.png" width=90% height=90%>
+
+
+You can use  joint_state_publisher_gui to relocate and rotate the joints, each slider control with a different joint.
+
+
+
+
+<img src="https://user-images.githubusercontent.com/86131920/123091402-f727d180-d431-11eb-94b9-31ca8f86a574.png" width=90% height=90%>
+
+
+
+
+
+<img src="https://user-images.githubusercontent.com/86131920/123091490-132b7300-d432-11eb-9552-ac654c26af88.png" width=90% height=90%>
+
 
