@@ -79,9 +79,13 @@ git clone https://github.com/smart-methods/arduino_robot_arm_gripper
 2- Make sure you installed all these packages depending on your Ros version. These commands install the simulation and control packages that are needed to run the robot arm on Gazebo or Rivs and control with joints. Joint state publisher is one of the ROS packages that is commonly used to interact with each joint of the robot.
 
 ``$ sudo apt-get install ros-melodic-moveit``
+
 ``$ sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui``
+
 ``$ sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher``
+
 ``$ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control``
+
 
 3- To run the robot arm package on the simulator and control with joints, use the next command.
 
